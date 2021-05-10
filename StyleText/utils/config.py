@@ -122,7 +122,7 @@ def load_config(file_path):
     ext = os.path.splitext(file_path)[1]
     assert ext in ['.yml', '.yaml'], "only support yaml files for now"
     with open(file_path, 'rb') as f:
-        config = yaml.load(f, Loader=yaml.Loader)
+        config = yaml.load(f, Loader=yaml.SafeLoader)
 
     return config
 
