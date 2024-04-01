@@ -8,3 +8,4 @@ numpy
 visualdl
 python-Levenshtein
 opencv-contrib-python==4.2.0.32
+pillow>=10.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
